@@ -7,7 +7,7 @@ def mostrar_mensaje():
 ventana = tk.Tk() #Crea la ventana principal
 ventana.title("Ventana simple") #Le da un titulo    
 
-label = tk.Label(ventana, text="Presionada el botón ´para ver un mensaje") #Crea un widget de texto
+label = tk.Label(ventana, text="Presiona el botón ´para ver un mensaje") #Crea un widget de texto
 label.pack(pady=10) #Lo coloca en la ventana
 
 boton = tk.Button(ventana, text="Haz click aqui", command =mostrar_mensaje)
