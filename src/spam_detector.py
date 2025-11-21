@@ -9,7 +9,7 @@ def obtener_ruta_datos():
     # obtiene la ruta al archivo de datos
     script_dir = os.path.dirname(__file__)
     project_dir = os.path.dirname(script_dir)
-    return os.path.join(project_dir, 'data', 'spa,.csv')
+    return os.path.join(project_dir, 'data ', 'spam.csv')
 def entrenar_modelo():
     data_path = obtener_ruta_datos()
     data = pd.read_csv(data_path, encoding= 'latin-1')
