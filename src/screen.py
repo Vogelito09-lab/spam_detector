@@ -8,8 +8,9 @@ def analizar_email():
         return
 
     resultado = spam_detector.predecir_spam(texto, modelo, vectorizer)
+    print(resultado)
 
-    if resultado =="Spam":
+    if resultado =="spam":
         etiqueta_resultado.config(text = "Spam", fg = "Red")
     else:
         etiqueta_resultado.config(text="No spam", fg = "green")
